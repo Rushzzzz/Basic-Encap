@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  char value;
+  int num1,num2;
+  cout<<"Enter First Number:";
+  cin>>num1;
+  cout<<"Enter Second Number:";
+  cin>>num2;
+  cout<<"What u want:";
+  cin>>value;
+  
+  switch(value){
+    case '+': cout<<"Addition:"<<num1+num2;
+    break;
+    case '-': cout<<"Substraction:"<<num1-num2;
+    break;
+    case '*': cout<<"Multiplication:"<<num1*num2;
+    break;
+    case '/': cout<<"Division:"<<num1/num2;
+    break;
+    case '%': cout<<"Remainder:"<<num1%num2;
+    break;
+    default: cout<<"Invalid choice";
+    return 0;
+  }
+}
